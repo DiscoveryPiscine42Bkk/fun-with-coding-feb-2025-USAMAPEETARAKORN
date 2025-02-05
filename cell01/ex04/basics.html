@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+        body {
+            background-color: pink; /* Set background color to pink */
+            margin: 0;
+            font-family: Arial, sans-serif; /* Set font for the page */
+        }
+
+        h1 {
+            color: white; /* White text color for the title */
+            text-align: center; /* Center the title */
+            font-size: 4em; /* Increase font size */
+            margin: 20px; /* Margin around the title */
+        }
+
+        .images-container {
+            display: flex; /* Align images side by side */
+            justify-content: center; /* Center images horizontally */
+            gap: 1px; /* Space between images */
+        }
+
+        .images-container img {
+            max-width: 50%; /* Adjust image size */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #7f4a21; /* Optional: add border */
+            border-radius: 8px; /* Optional: rounded corners */
+        }
+
+        .images-container a {
+            display: block; /* Make the link display as block for better spacing */
+            text-align: center; /* Center text below images */
+            margin-top: 6px; /* Space between image and link */
+        }
+
+        hr {
+            border: 1px solid #ffffff; /* Style for horizontal line */
+            margin: 20px 0; /* Margin around the line */
+        }
+
+        .footer {
+            text-align: right; /* Align text to the right */
+            font-style: italic; /* Italicize text */
+            font-family: 'Courier New', monospace; /* Use monospace font */
+            margin-right: 20px; /* Margin to the right */
+            margin-bottom: 20px; /* Margin at the bottom */
+        }
+    </style>
+</head>
+<body>
+    <h1>Shoe&Small</h1> <!-- Title with special character -->
+
+    <div class="images-container">
+        <!-- Online shop images with links -->
+        <div>
+            <a href="https://www.converse.co.th/media/catalog/product/cache/8fcecb462959d400cda3532b9c3dc9f0/a/0/a04689c_a_08x1.jpg" target="_blank">
+                <img src="https://www.converse.co.th/media/catalog/product/cache/8fcecb462959d400cda3532b9c3dc9f0/a/0/a04689c_a_08x1.jpg" alt="Online Shop 1">
+            </a>
+            <a href="https://www.converse.co.th/chuck-taylor-all-star-cruise-a04689cu-f3bkxx.html" target="_blank">Click Here!</a>
+        </div>
+        <div>
+            <a href="https://media.lotsthailand.com/media/catalog/product/cache/1385b635fbcd2b4a1bd7d222a65ada37/v/n/vn000d5invy_alt1_1.jpg" target="_blank">
+                <img src="https://media.lotsthailand.com/media/catalog/product/cache/1385b635fbcd2b4a1bd7d222a65ada37/v/n/vn000d5invy_alt1_1.jpg" alt="Online Shop 2">
+            </a>
+            <a href="https://vans.lotsthailand.com/vans-sk8-hi-navy-vn000d5invy.html" target="_blank">Click Here!</a>
+        </div>
+    </div>
+
+    <hr> <!-- Horizontal line -->
+
+    <div class="footer">
+        &copy; wil 2024 <!-- Copyright, login, and year -->
+    </div>
+</body>
+</html>

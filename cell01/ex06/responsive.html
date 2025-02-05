@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        html, body {
+            height: 100%; /* ให้ html และ body มีความสูงเต็มหน้าจอ */
+            margin: 0; /* ลบ margin */
+        }
+
+        table {
+            width: 100%; /* ให้ตารางขยายเต็มหน้าจอ */
+            height: 100%; /* ให้ตารางมีความสูงเต็มหน้าจอ */
+            border-collapse: collapse; /* ให้เส้นขอบตารางรวมกัน */
+            margin: 0;
+        }
+
+        td {
+            padding: 20px;
+            text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+            color: white;
+            font-size: 1.5em;
+            height: 50%; /* ทำให้เซลล์มีความสูงครึ่งหนึ่งของตาราง */
+        }
+
+        .box1 {
+            background-color: #3498db; /* สีน้ำเงิน */
+        }
+
+        .box2 {
+            background-color: #e74c3c; /* สีแดง */
+        }
+
+        /* Media Query สำหรับขนาดหน้าจอเล็ก */
+        @media (max-width: 768px) {
+            td {
+                font-size: 1em; /* ขนาดตัวอักษรเล็กลงเมื่อหน้าจอเล็กลง */
+                padding: 10px; /* ลดระยะห่างในเซลล์ */
+            }
+        }
+
+        /* Media Query สำหรับหน้าจอที่มีขนาดเล็กกว่ามาก */
+        @media (max-width: 480px) {
+            td {
+                font-size: 0.8em; /* ขนาดตัวอักษรเล็กลงมาก */
+                padding: 5px; /* ลดระยะห่างในเซลล์ */
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="box1">This is Box 1</td>
+            <td class="box2">This is Box 2</td>
+        </tr>
+    </table>
+</body>
+</html>
