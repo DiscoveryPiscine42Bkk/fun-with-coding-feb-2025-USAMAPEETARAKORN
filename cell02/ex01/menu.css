@@ -1,0 +1,75 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 60px; /* เว้นระยะด้านบนให้พอดีกับ navbar */
+  }
+  
+  .navbar {
+    background-color: #0078d7;
+    padding: 10px 20px;
+    border-radius: 0;
+    position: fixed; /* ตรึง Navbar ไว้ด้านบน */
+    top: 0;
+    left: 0;
+    width: 100%; /* ครอบคลุมความกว้างหน้าจอ */
+    z-index: 1000;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu > li {
+    position: relative;
+    margin: 0 15px;
+  }
+  
+  .menu > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .menu > li:hover > a {
+    background-color: #005a9e;
+    border-radius: 4px;
+  }
+  
+  .dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: none;
+    min-width: 150px;
+    z-index: 100;
+  }
+  
+  .dropdown li a {
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .menu > li:hover .dropdown {
+    display: block;
+  }
+  
