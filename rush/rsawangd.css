@@ -1,0 +1,239 @@
+
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* ให้พื้นที่ทั้งหน้ามีความสูงเต็มหน้าจอ */
+    background-color: #f8d9e6; /* สีชมพูอ่อน (พื้นหลังของหน้าเว็บ) */
+}
+.background-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #c7acac;
+    z-index: 1000;
+}
+/* สไตล์สำหรับ container ของเมนู */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: #fd5aa6; /* สีชมพูเข้มขึ้นสำหรับแถบเมนู */
+    padding: 20px 10px; /* เพิ่มระยะ padding ด้านบนและล่าง */
+    height: 50px; /* กำหนดความสูงของแถบ */
+    margin: 0; /* เพิ่มพื้นที่ระหว่างแถบกับขอบของหน้าเว็บ */
+}
+
+/* ปรับลักษณะของปุ่ม Home */
+.home-button h1 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* สไตล์สำหรับลิสต์เมนู */
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* สไตล์สำหรับแต่ละไอเท็มในเมนู */
+.nav-item {
+    margin: 0 15px;
+}
+
+/* สไตล์สำหรับลิงก์ในเมนู */
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #ffd1e6; /* สีชมพูอ่อนเมื่อเมาส์ชี้ */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* ให้รองรับขนาดหน้าจอเล็ก */
+}
+
+.info-box {
+    flex: 1;
+    min-width: 300px; /* กำหนดขนาดขั้นต่ำให้เหมาะกับหน้าจอเล็ก */
+    max-width: 500px;
+}
+
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 40px 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 4s8px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.profile-picture {
+    width: 400px; /* กำหนดความกว้าง */
+    height: 400px; /* กำหนดความสูง */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    background-image: url('https://i.imgur.com/Ic9rc4Z.jpeg'); /* เส้นทางไปยังรูปภาพ */
+    background-size: cover; /* ครอบคลุมพื้นที่ */
+    background-position: center; /* จัดตำแหน่งกลาง */
+    background-repeat: no-repeat; /* ไม่ให้รูปซ้ำ */
+    border: 2px solid #ddd; /* เพิ่มกรอบถ้าต้องการ */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* เพิ่มเงาให้ดูมีมิติ */
+}
+
+
+.flex-box, .grid-box {
+    width: 100%;
+    gap: 20px;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.info-box {
+    background-color: #f7b1b1;
+    border: 1px solid #f5afaf;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-box p {
+    line-height: 1.8;
+}
+
+/* สไตล์ของส่วน Contact */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* ระยะห่างระหว่างไอคอน */
+    flex-wrap: wrap; /* รองรับการพับบรรทัดเมื่อหน้าจอเล็ก */
+    margin-top: 20px;
+}
+
+.contact-icons .icon {
+    width: 60px; /* ขนาดของไอคอน */
+    height: 60px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+}
+
+.contact-icons .icon img {
+    width: 30px; /* ขนาดของไอคอนที่ใช้แสดง */
+    height: 30px;
+}
+
+.contact-icons .icon:hover {
+    transform: scale(1.1);
+    background-color: #eee; /* เปลี่ยนสีพื้นหลังเมื่อวางเมาส์ */
+}
+
+/* การกำหนดสีพื้นหลังที่แตกต่างกันสำหรับแต่ละไอคอน */
+.icon.facebook {
+    background-color: #3b5998; /* สีพื้นหลังของ Facebook */
+}
+
+.icon.instagram {
+    background-color: #e4405f; /* สีพื้นหลังของ Instagram */
+}
+
+.icon.tiktok {
+    background-color: #030303; /* สีพื้นหลังของ Phone */
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 768px) {
+    .flex-box {
+        flex-direction: row;
+    }
+
+    .grid-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-box {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

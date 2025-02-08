@@ -1,0 +1,185 @@
+
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    background-color: #f5f3ee;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    position: fixed; /* ทำให้เมนูติดอยู่ด้านบน */
+    top: 0; /* ชิดด้านบนของหน้า */
+    left: 0;
+    width: 100%; /* ให้เต็มหน้าจอ */
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    box-shadow: -8px -8px 8px #feffff, 8px 8px 8px #161b1d2f;
+    padding: 0 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    font-size: x-large;
+    font-weight: 600;
+    color: #858686;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.welcome {
+    font-size: x-large;
+    font-weight: 600;
+    color: #858686;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.circle-image {
+    width: 230px;
+    height: 230px;
+    margin-top: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: -8px -8px 8px #feffff, 8px 8px 8px #161b1d2f;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    margin-top: 50px;
+    font-size: 24px;
+    max-width: 600px;
+    
+    
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.box {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 35px;
+    background-color: #f4f4f4;
+    box-shadow: -8px -8px 8px #feffff, 8px 8px 8px #161b1d2f;
+    max-width: 600px;
+    text-align: center;
+
+    /* Flexbox for centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px; /* กำหนดความสูงขั้นต่ำเพื่อให้จัดแนวกลางได้ */
+}
+
+.box-container1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.box1 {
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 35px;
+    background-color: #f4f4f4;
+    box-shadow: -8px -8px 8px #feffff, 8px 8px 8px #161b1d2f;
+    max-width: 550px;
+    
+
+    /* Flexbox for centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px; /* กำหนดความสูงขั้นต่ำเพื่อให้จัดแนวกลางได้ */
+}
+.section {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+ul {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 0;
+}
+ul li {
+    margin-bottom: 16px;
+    font-size: large;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+ul li::before {
+    content: "●";
+    color: #34302e;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 12px;
+}
+.section-title {
+    font-weight: bold;
+    color: #444;
+}
+
+.contact-container3 {
+    text-align: center;
+    margin: 30px auto; /* ระยะห่างจากด้านบนและล่าง */
+    padding: 40px;
+    max-width: 800px;
+    
+}
+
+.contact-container3 h2 {
+    font-size: 32px;
+    color: #555;
+}
+
+.icon-links {
+    margin-top: 20px;
+}
+
+.icon-links a {
+    margin: 0 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icon-links img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.icon-links img:hover {
+    transform: scale(1.2);
+}
